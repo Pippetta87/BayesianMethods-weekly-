@@ -1,0 +1,61 @@
+\section{RegLez 19/20}
+
+\begin{frame}[allowframebreaks]{Section TOC}
+%currentsection,hideallsubsections,subsubsectionstyle=hide
+\tableofcontents[currentsection,sectionstyle=show/hide,subsectionstyle=show/show/hide]%subsection created adding to toc as subsection
+\end{frame}
+
+\begin{frame}[allowframebreaks]{List of keywords}
+\listofkeywords
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Reg Lez 19/20}\linkdest{reglez20}
+
+\modulo{python and versioning}
+\begin{itemize}
+\item 23/09/2019 - lezione: Introduzione al corso. Il concetto di version control; version control locale, centralizzato e distribuito. Repositori, revisioni, tag. Funzioni di \keyword{hashing} e hashing in Python. Introduzione a git.
+\item 23/09/2019 - esercitazione: Sessione hands-on su version control.
+\item 26/09/2019 - lezione: Introduzione a Python. Python 2 vs. Python 3; lo zen di Python; coding conventions. Variabili e tipi; formattazione delle stringhe. Funzioni; funzioni variadiche e keyword argument. Controllo del flusso. La rappresentazione dei numeri in virgola mobile e l'aritmetica in virgola mobile.
+\item 30/09/2019 - lezione: La libreria standard di Python. Meccanismo di import. Alcuni moduli della libraria standard: time, datetime, os, os.path, shutil, math, random, argparse, logging. Introduzione al primo assignment.
+\item 30/09/2019 - esercitazione: Assignment $\#1$: distribuzione della frequenza relativa delle lettere in un file di testo.
+\phantomsection\linkdest{ott}
+\item 14/10/2019 - lezione: L'ecosistema scientifico di Python: numpy e scipy. Array multidimensionali. Differenza tra array e liste. Funzioni matematiche in numpy. Broacast. Maschere. Vettorizzazione. Introduzione all'assegnamento $\#3$: generatori di numeri random. Hit or miss ed inverse transform. Spline. Implementazione di una classe per la generazione di numeri random con pdf generica.
+\item 21/10/2019 - lezione: Correttezza di un programma: unit test ed analisi statica della sintassi. Il modulo unittest di Python. pylint e pyflakes. Documentazione: docstrings e sphinx; readthedocs. Continuous integration.
+\item 21/10/2019 - esercitazione: Creazione di un pacchetto Python. Layout, unit test e documentazione. Continuous integration con Travis CI e documentazione con readthedocs.
+\item 28/10/2019 - esercitazione: Di nuovo sugli strumenti di lavoro: setup del repositorio, continuous integration e documentazione.
+\end{itemize}
+
+\modulo{Parallel computation}
+
+\begin{itemize}[resume]
+\phantomsection\linkdest{nov}
+\item 04/11/2019 - lezione: Architettura di Von Neumann. Instruction Level Parallelism: processori superscalari, vettorializzazione e pipelining. Leggi di scaling di Dennard e Moore. Parallelismo a livello di task. Tassonomia di Flynn. Esecuzione concorrenziale. Differenza tra programmazione concurrent e parallelismo. Definizione di Speedup. Legge di Amdhal e legge di Gustafson.
+\item 04/11/2019 - esercitazione: Multithreading e Multiprocessing in Python. Vari esempi sull'uso del modulo di multiprocessing: lancio, pool, queue, comunicazione tra processi, sincronizzazione tra processi. Modulo Threading. Confronto tra processi e threads su 2,4,8 processori e confronto con implementazione seriale per un problema di fattorizzazione.
+\item 07/11/2019 - lezione: Riassunto su necessità e limiti del calcolo parallelo. Introduzione sulle GPU. Definizione della metrica sulla potenza di calcolo. Confronto CPU vs GPU: ambiti di applicazioni e differenze architetturali. Calcolo eterogeneo. Introduzione al modello di programmazione basato su CUDA (nvidia). Cenno sull'utilizzo delle librerie e delle direttive al preprocessore. Esempi sulla struttura di un programma host-device in cuda.
+\item 11/11/2019 - lezione: Esempi pratici di scrittura di kernel GPU. Somma di vettori come esempio per la gestione delle risorse di parallelizzazione. Moltiplicazione di matrici come esempio sull'utilizzazione della memoria condivisa (shared memory) del blocco per diminuire le richieste alla moemria principale. Sincronizzazione di threads. Coalescenza della lettura della memoria e come sfruttarla per l'ottimizzazione della larghezza di banda.
+\item 11/11/2019 - esercitazione: Introduzione all'uso del modulo pyCUDA. Esercitazione Hands-on: Utilizzo del notebook Jupyter per implementare alcuni esempi sull'uso di GPU in python (attraverso colaboratory). Metodi per l'import di kernel C-CUDA in programmi python. Proposta di kernel per alcune problematiche diffuse della programmazione parallela: Istogrammi e introduzione alle funzioni atomiche; Parallel reduction utilizzando la shared memory e la sincronizzazione; Stencil (convolution) e concetto del filtro con maschera di convoluzione.
+\end{itemize}
+
+\modulo{Machine learning}
+
+\begin{itemize}[resume]
+\item 14/11/2019 - lezione: Introduzione al Machine Learning. Concetti fondamentali: function approximation, model, hyper-parameters, parameters, objective function, generalization,regularization. Examples: linear regression and decision trees (bagging vs boosting). Historical introduction to neural networks.
+\item 21/11/2019 - lezione: Artificial neural network, the Multi Layer Perceptron, universal approximation theorem, gradient descent techniques. Deep FF networks, regularization with dropout. Convolutional networks, pooling layers. Autoencoders. Transfer learning. Keras toolset. Example of simple keras DNN on colab.
+\end{itemize}
+
+\modulo{CPP}
+
+\begin{itemize}[resume]
+\phantomsection\linkdest{dic}
+\item 25/11/2019 - lezione: Reminders of few C concepts, hello world program, basic gcc compiling. Memory handling, pointers and references. Classes, polymorphism, functions overload Templates meta programming, template specialization.
+\item 25/11/2019 - esercitazione: Compiling,making shared libraries, linking. Create some classes and objects such as 4-vectors, particle, decay chain. Create some templated classes, overload operator+ to handle multiple concrete types.
+\item 28/11/2019 -lezione: Standard Template Libraries: standard algorithms, containers, iterators string handling, file parsing, object persistency Singletons, smart pointers, thread-safety.
+\item 02/12/2019 - lezione: Advanced tools in deep learning: LSTM, Convolution 1x1, non cartesian data, Graph Networks, keras callbacks
+\item 02/12/2019 - esercitazione: Lezione di recupero secondo modulo (dopo cancellazione per allerta meteo). Exercise: build a CNN distinguishing circles from squares.
+\item 02/12/2019 16:00-18:00 (2:0 h) esercitazione: Lezione di recupero secondo modulo (dopo cancellazione per allerta meteo). Example of DNN for an actual physics problem (jet tagging in very high pt jets). Testing different architectures: simple FF network, CNN, merged FF+CNN, (as homework: Conv1D, LSTM/GRU)
+\item 05/12/2019 - lezione: New features in C++11/14/17 : auto, decltype, lambda, range based for loops, variadic template, tuples, threads, smart pointers, new containers, move semantic, and other features of the new standards.
+\item 09/12/2019 - lezione: Introduction to ROOT toolkit: setting up the environment, using the interactive shell, making histograms, functions, graph. Creating macros, compiling ROOT programs. Using pyroot with Just In Time compilation or loading fully compiled macros. ROOT object persistency, root columnar data model (TTree)
+\item 09/12/2019 - esercitazione: Exercise 1: adjusting the graphics of a plot. Exercise 2: reading and writing simple, complex and custom objects to a TTree
+\item 12/12/2019 - lezione: Modelli di calcolo in fisica delle alte energie. Motivazione dei parametri fondamentali di LHC. Calcolo della quantita' di dati e di calcolo aspettati. Modello GRID e calcolo distribuito: concetti fondamentali e implementazione. HL-LHC e futuri acceleratori, scaling dei parametri e delle necessita' di calcolo. Soluzioni previste per HL-LHC e in generale futuri acceleratori: - datalake - utilizzo di super computers - utilizzo di cloud commerciali. Software di Esperimento: generalita' di utilizzo Architetture future di calcolo: preview di nuove tecnologie, nuovi algoritmi, fino al possibile utilizzo di quantum computing.
+\end{itemize}
+\end{frame}
